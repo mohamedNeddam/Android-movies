@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.android_movies"
-        minSdk = 33
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -66,4 +66,25 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+
+    implementation("io.coil-kt:coil-compose:2.4.0")
+    implementation( "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+
+
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+    //Moshi
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+
+    //networking
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+    val nav_version = "2.7.4"
+
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+
+
 }
